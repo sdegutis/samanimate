@@ -169,8 +169,8 @@ function persistElement<E extends HTMLInputElement, K extends keyof E>(input: E,
   const savedValue = localStorage.getItem(input.id);
   if (savedValue !== null) {
     input[opts.value] = JSON.parse(savedValue);
-    opts.set(input[opts.value]);
   }
+  opts.set(input[opts.value]);
   input.oninput = e => {
     localStorage.setItem(input.id, String(input[opts.value]));
     opts.set(input[opts.value]);
