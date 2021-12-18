@@ -13,13 +13,11 @@ export class Reel {
         this.loops = true;
         this.speed = 10;
         this.ctx = this.canvas.getContext('2d');
-        window.addEventListener('load', () => {
-            this.recalculateOffsets();
-        });
-        window.addEventListener('resize', () => {
-            this.recalculateOffsets();
-        });
+        window.addEventListener('load', () => this.recalculateOffsets());
+        window.addEventListener('resize', () => this.recalculateOffsets());
         this.canvas.onpointerdown = (e) => {
+            if (this.animating)
+                return;
             this.canvas.setPointerCapture(e.pointerId);
             if (e.buttons === 32) {
                 this.startErasing(e);
@@ -98,6 +96,8 @@ export class Reel {
         }
     }
     addPicture(data) {
+        if (this.animating)
+            return;
         const index = this.pictures.length;
         const thumbnail = document.createElement('canvas');
         thumbnail.width = 120;
@@ -140,6 +140,8 @@ export class Reel {
         console.log('focusing picture', pictureIndex);
     }
     undo() {
+        if (this.animating)
+            return;
         this.picture.undo();
         this.redrawThumbnail();
         this.redraw();
@@ -147,6 +149,8 @@ export class Reel {
         this.autosave();
     }
     redo() {
+        if (this.animating)
+            return;
         this.picture.redo();
         this.redrawThumbnail();
         this.redraw();
