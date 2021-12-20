@@ -9,6 +9,7 @@
     "module": "ES2020", /* Specify what module code is generated. */
     "rootDir": "./src", /* Specify the root folder within your source files. */
     "noEmit": true,
+    "isolatedModules": true,
     "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
     "strict": true, /* Enable all strict type-checking options. */
     "noImplicitAny": true, /* Enable error reporting for expressions and declarations with an implied `any` type.. */
