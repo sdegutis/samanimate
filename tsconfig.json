@@ -8,8 +8,7 @@
     ], /* Specify a set of bundled library declaration files that describe the target runtime environment. */
     "module": "ES2020", /* Specify what module code is generated. */
     "rootDir": "./src", /* Specify the root folder within your source files. */
-    "sourceMap": false, /* Create source map files for emitted JavaScript files. */
-    "outDir": "docs/js/",
+    "noEmit": true,
     "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
     "strict": true, /* Enable all strict type-checking options. */
     "noImplicitAny": true, /* Enable error reporting for expressions and declarations with an implied `any` type.. */
