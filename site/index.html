@@ -7,61 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SamAnimate!</title>
   <link rel="stylesheet" href="style.css">
+  <script src="./$setup.js" type="module"></script>
 </head>
-
-<body>
-
-  <div id="root">
-    <canvas id="canvas" width="1200" height="700"></canvas>
-    <div id="thumbnails">
-      <button id="add-picture" class="thumbnail" style="font-size: 300%;">+</button>
-    </div>
-    <div id="toolbar">
-      <fieldset>
-        <legend>Drawing</legend>
-        <button id="undo-button" class="button">Undo</button>
-        <button id="redo-button" class="button">Redo</button>
-        <label>
-          <span>Thickness</span>
-          <input type="range" min="1" max="20" value="10" id="thickness">
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>Shadows</legend>
-        <button id="shadow-left" class="button shadow active">&larr;</button>
-        <label>
-          <span>Shadows</span>
-          <input type="range" min="0" max="5" value="3" id="shadows">
-        </label>
-        <button id="shadow-right" class="button shadow">&rarr;</button>
-      </fieldset>
-      <fieldset>
-        <legend>Animating</legend>
-        <button id="animate" class="button animator">Animate</button>
-        <label>
-          <span>Speed</span>
-          <input type="range" min="50" max="500" step="50" value="200" id="speed">
-        </label>
-        <label>
-          <span>Loop</span>
-          <input type="checkbox" id="loop" checked>
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>Files</legend>
-        <button id="new" class="button">New</button>
-        <button id="save" class="button">Save</button>
-        <button id="load" class="button">Load</button>
-      </fieldset>
-      <fieldset>
-        <legend>Recording</legend>
-        <button id="record" class="button recorder">Record</button>
-      </fieldset>
-    </div>
-  </div>
-
-  <script src="./$index.js" type="module"></script>
-
-</body>
 
 </html>

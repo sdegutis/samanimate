@@ -9,6 +9,7 @@
     "module": "ES2020", /* Specify what module code is generated. */
     "rootDir": "site", /* Specify the root folder within your source files. */
     "noEmit": true,
+    "jsx": "preserve",
     "types": [
       "@imlib/core"
     ],
