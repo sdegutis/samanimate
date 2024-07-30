@@ -1,0 +1,119 @@
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  touch-action: none;
+}
+
+html,
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#toolbar {
+  user-select: none;
+}
+
+#thumbnails {
+  width: 1200px;
+  overflow-x: scroll;
+  padding-bottom: 10px;
+}
+
+#thumbnails::-webkit-scrollbar {
+  height: 40px;
+}
+
+#thumbnails::-webkit-scrollbar-track {
+  border-radius: 3px;
+  border: 1px solid #7cf;
+  background: #fff;
+}
+
+#thumbnails::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  border: 1px solid #07f;
+  background: #def;
+}
+
+#root {
+  display: none;
+  gap: 10px;
+}
+
+#canvas {
+  border: 1px solid #07f;
+  touch-action: none;
+  border-radius: 3px;
+}
+
+.button {
+  border: 1px solid #07f;
+  outline: none;
+  background: #def;
+  cursor: pointer;
+  padding: 1em;
+  touch-action: none;
+  border-radius: 3px;
+}
+
+.button:active {
+  background: #7cf;
+}
+
+.button.recorder.active {
+  background-color: #f7b;
+}
+
+.button.animator.active {
+  background-color: #7fb;
+}
+
+.button.shadow.active {
+  background-color: #7cf;
+}
+
+#thumbnails {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0.5em;
+  justify-content: left;
+}
+
+.thumbnail {
+  width: 122px;
+  background: white;
+  border: 1px solid #000;
+  outline: none;
+  border-radius: 3px;
+}
+
+.thumbnail.current {
+  border-color: #07f;
+  background-color: #def7;
+}
+
+fieldset {
+  display: inline-grid;
+  grid-auto-flow: column;
+  gap: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+label {
+  display: inline-grid;
+  justify-items: center;
+}
