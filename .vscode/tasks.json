@@ -11,17 +11,6 @@
 			"runOptions": {
 				"runOn": "folderOpen"
 			}
-		},
-		{
-			"type": "npm",
-			"script": "start",
-			"group": "build",
-			"problemMatcher": [],
-			"label": "npm: start",
-			"detail": "esbuild --watch",
-			"runOptions": {
-				"runOn": "folderOpen"
-			}
 		}
 	]
 }

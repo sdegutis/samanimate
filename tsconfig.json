@@ -7,7 +7,7 @@
       "DOM.Iterable"
     ], /* Specify a set of bundled library declaration files that describe the target runtime environment. */
     "module": "ES2020", /* Specify what module code is generated. */
-    "rootDir": "./src", /* Specify the root folder within your source files. */
+    "rootDir": "site", /* Specify the root folder within your source files. */
     "noEmit": true,
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */

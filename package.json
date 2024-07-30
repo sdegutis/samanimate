@@ -4,15 +4,17 @@
   "description": "",
   "main": "out/main.js",
   "scripts": {
-    "start": "esbuild src/index.ts --bundle --outfile=docs/index.js --watch",
-    "build": "tsc",
+    "dev": "imlib dev",
+    "generate": "imlib generate",
     "watch": "tsc --watch"
   },
   "keywords": [],
   "author": "Steven Degutis",
   "license": "TBD",
   "devDependencies": {
-    "esbuild": "^0.14.5",
     "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@imlib/core": "^2.2.0"
   }
 }

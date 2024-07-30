@@ -1,4 +1,4 @@
-import { Reel } from "./reel.js";
+import { Reel } from "./$reel.js";
 
 const reel = new Reel(
   document.getElementById('canvas') as HTMLCanvasElement,
