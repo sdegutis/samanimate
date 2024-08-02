@@ -1,4 +1,4 @@
-import { Reel } from "./$reel.js";
+import { Reel } from "./reel.js";
 
 const canvas = <canvas id="canvas" width="1200" height="700"></canvas> as HTMLCanvasElement;
 

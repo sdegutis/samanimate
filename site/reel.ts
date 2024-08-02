@@ -1,5 +1,5 @@
-import { Line } from "./$line.js";
-import { Picture, SerializedPicture } from "./$picture.js";
+import { Line } from "./line.js";
+import { Picture, SerializedPicture } from "./picture.js";
 
 export class Reel {
 
