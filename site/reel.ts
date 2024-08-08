@@ -214,7 +214,7 @@ export class Reel {
   }
 
   redraw() {
-    this.ctx.fillStyle = '#fff';
+    this.ctx.fillStyle = '#000';
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
     if (!this.animating) {
@@ -232,14 +232,14 @@ export class Reel {
         const distance = (this.picture.index - i) * -this.shadowDir;
         const grey = BASE + (distance * GAP);
 
-        const style = '#' + grey.toString(16).padStart(2, '0').repeat(3);
+        const style = '#' + (255 - grey).toString(16).padStart(2, '0').repeat(3);
         this.ctx.strokeStyle = style;
 
         picture!.redraw(this.ctx);
       }
     }
 
-    this.ctx.strokeStyle = '#000';
+    this.ctx.strokeStyle = '#fff';
     this.picture!.redraw(this.ctx);
   }
 

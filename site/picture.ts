@@ -75,7 +75,7 @@ export class Picture {
   redrawThumbnail() {
     const thumbnailCtx = this.thumbnail.getContext('2d')!;
     thumbnailCtx.clearRect(0, 0, this.thumbnail.width, this.thumbnail.height);
-    thumbnailCtx.strokeStyle = '#000';
+    thumbnailCtx.strokeStyle = '#fff';
     this.redraw(thumbnailCtx, 0.1);
   }
 

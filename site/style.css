@@ -10,6 +10,8 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: #111;
+  color: #ddd;
 }
 
 body {
@@ -38,14 +40,14 @@ body {
 
 #thumbnails::-webkit-scrollbar-track {
   border-radius: 3px;
-  border: 1px solid #7cf;
-  background: #fff;
+  border: 1px solid #333;
+  background: #000;
 }
 
 #thumbnails::-webkit-scrollbar-thumb {
   border-radius: 3px;
-  border: 1px solid #07f;
-  background: #def;
+  border: 1px solid #059;
+  background: #135;
 }
 
 #root {
@@ -54,35 +56,37 @@ body {
 }
 
 #canvas {
-  border: 1px solid #07f;
+  border: 1px solid #333;
   touch-action: none;
   border-radius: 3px;
 }
 
 .button {
-  border: 1px solid #07f;
+  border: 1px solid #059;
   outline: none;
-  background: #def;
+  background: #135;
+  color: inherit;
   cursor: pointer;
   padding: 1em;
   touch-action: none;
   border-radius: 3px;
 }
 
-.button:active {
-  background: #7cf;
+.button:active,
+#thumbnails::-webkit-scrollbar-thumb:active {
+  background: #059;
 }
 
 .button.recorder.active {
-  background-color: #f7b;
+  background-color: #703;
 }
 
 .button.animator.active {
-  background-color: #7fb;
+  background-color: #042;
 }
 
 .button.shadow.active {
-  background-color: #7cf;
+  background-color: #059;
 }
 
 #thumbnails {
@@ -94,22 +98,23 @@ body {
 
 .thumbnail {
   width: 122px;
-  background: white;
-  border: 1px solid #000;
+  background: #000;
+  color: inherit;
+  border: 1px solid #333;
   outline: none;
   border-radius: 3px;
 }
 
 .thumbnail.current {
-  border-color: #07f;
-  background-color: #def7;
+  border-color: #059;
+  background-color: #1357;
 }
 
 fieldset {
   display: inline-grid;
   grid-auto-flow: column;
   gap: 0.5em;
-  border: 1px solid #ddd;
+  border: 1px solid #333;
   border-radius: 3px;
 }
 
