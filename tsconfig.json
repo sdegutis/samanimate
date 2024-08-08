@@ -11,7 +11,7 @@
     "noEmit": true,
     "jsx": "preserve",
     "types": [
-      "@imlib/core"
+      "@imlib/core/runtime.d.ts"
     ],
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
